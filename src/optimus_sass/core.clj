@@ -8,8 +8,8 @@
 (def ^:private ruby
   (ScriptingContainer. LocalContextScope/SINGLETON))
 
-(ruby-eval ruby "ENV['GEM_PATH']='gems'
-                 ENV['GEM_HOME']='gems'
+(ruby-eval ruby "ENV['GEM_PATH']='deps'
+                 ENV['GEM_HOME']='deps'
                  require 'sass'")
 
 (def ^:private sass (ruby-eval ruby "Sass"))
