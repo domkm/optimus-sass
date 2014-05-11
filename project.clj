@@ -7,4 +7,5 @@
                  [optimus "0.14.3"]
                  [org.jruby/jruby-complete "1.7.11"]
                  [zweikopf "1.0.0" :exclusions [org.jruby/jruby-complete]]]
-  :resource-paths ["deps"])
+  :resource-paths ["deps"]
+  :global-vars {*warn-on-reflection* true})
