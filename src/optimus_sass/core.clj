@@ -15,7 +15,7 @@
 
 (defn- load-sass-asset [public-dir path]
   (let [resource (existing-resource public-dir path)
-        css (-> resource io/file compile-file)
+        css (-> resource io/resource compile-file)
         css-asset (create-css-asset (str/replace path #"\.sass\z|\.scss\z" ".css")
                                     css
                                     (last-modified resource))]

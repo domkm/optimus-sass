@@ -1,4 +1,4 @@
-(defproject optimus-sass "0.0.3"
+(defproject optimus-sass "0.1.0-SNAPSHOT"
   :description "Sass/SCSS asset loader for Optimus"
   :url "http://github.com/DomKM/optimus-sass"
   :license {:name "Eclipse Public License"
